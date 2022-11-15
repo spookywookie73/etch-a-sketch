@@ -2,15 +2,65 @@
   --columns-row: 2;
 }
 
+body {
+  background-color: #f2d325;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 80px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
 #container {
   display: grid;
   grid-template-columns: repeat(var(--columns-row), 1fr);
   grid-template-rows: repeat(var(--columns-row), 1fr);
-  width: 700px;
-  height: 700px;
+  width: 550px;
+  height: 550px;
   border: 1px solid #000;
+  background-color: #ffffff;
 }
 
 #container>div {
   border: 0px;
+}
+
+.btnContainer {
+  display:flex;
+  gap: 17px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btnContainer>button {
+  width: 80px;
+  border-radius: 5px;
+  transform: scale(1);
+}
+
+.btns:active {
+  transform: scale(1.1);
+}
+
+.gridContainer {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gridContainer>button {
+  width: 100px;
+  border-radius: 5px;
 }
